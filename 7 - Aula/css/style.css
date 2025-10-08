@@ -1,0 +1,152 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1 {
+  background-color: #222;
+  color: #eee;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #34495e;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+p {
+  max-width: 800px;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  color: #34495e;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.botoes {
+  text-align: center;
+  margin-top: 30px;
+}
+
+input[type="submit"],
+input[type="reset"],
+a.botao {
+  background-color: #222;
+  color: #eee;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+  margin: 0 10px;
+  min-width: 130px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+a.botao:hover {
+  background-color: #444;
+}
+
+label.inline {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: normal;
+  color: #34495e;
+}
+
+/* Imagens iguais e alinhadas */
+.container img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 10px;
+}
+
+.container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}

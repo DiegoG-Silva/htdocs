@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aula 2</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Poppins', sans-serif, sans-serif;
+            margin: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            background-color: #222;
+            color: #eee;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 5px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .container-imagens {
+            display: flex;
+            justify-content: center;
+            gap: 30px; /* espaçamento entre imagens */
+            margin-bottom: 40px;
+        }
+
+        .minha-borda {
+            max-width: 350px; /* largura máxima */
+            height: auto;     /* altura ajustada para manter proporção */
+            border: 3px solid black;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .minha-borda:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo à SkinVerse</h1>
+
+    <div class="container-imagens">
+        <img src="image/ahri.jpg" alt="Ahri" title="Ahri" class="minha-borda" />
+        <img src="image/irelia.jpg" alt="Irelia" title="Irelia" class="minha-borda" />
+        <img src="image/kindred.jpg" alt="Kindred" title="Kindred" class="minha-borda" />
+    </div>
+
+    <p>
+        Seu destino definitivo para skins exclusivas!<br />
+
+        Aqui você encontra skins únicas com animações e efeitos incríveis para destacar seu estilo 
+        no jogo. Escolha a skin perfeita para seu personagem e domine com visual e personalidade.
+
+        Sua jornada começa aqui, na SkinVerse!
+    </p>
+</body>
+</html>
