@@ -39,4 +39,6 @@ $mysqli->query("INSERT INTO vendas (
                 '$id_produto', '$quantidade', '$preco_unitario', 
                 '$subtotal', '$valor_total'
             )");
+            header("Location: ../index.php?status=cadastro_ok");
+            exit(); // É importante usar exit() após o header()
 ?>

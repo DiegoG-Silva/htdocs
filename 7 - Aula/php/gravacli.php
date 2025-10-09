@@ -41,4 +41,6 @@ $novidades      = isset($_POST["novidades"]) ? 1 : 0;
                 '$riotid', '$campeao', '$pais', '$plataforma', '$novidades',
                 '$endereco', '$bairro', '$complemento', '$cidade', '$estado', '$cep'
             )");
+            header("Location: ../index.php?status=cadastro_ok");
+            exit(); // É importante usar exit() após o header()
 ?>

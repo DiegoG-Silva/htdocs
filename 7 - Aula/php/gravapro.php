@@ -21,4 +21,6 @@ $mysqli->query("INSERT INTO produtos_estoque (
             ) VALUES (
                 '$id_produto', '$nome_produto', '$descricao', '$marca', '$preco', '$estoque', '$detalhes'
             )");
+            header("Location: ../index.php?status=cadastro_ok");
+            exit(); // É importante usar exit() após o header()
 ?>
