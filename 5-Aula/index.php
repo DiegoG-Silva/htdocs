@@ -8,6 +8,7 @@
 <body>
 <div class="container">
     <h1>Bem vindo á SkinVerse</h1>
+    <h1>atualização foda 😎</h1>
     <div style="text-align:center; margin-bottom:20px;">
         <img src="image/ahri.jpg" alt="Ahri" style="max-width:30%; margin:5px;">
         <img src="image/irelia.jpg" alt="Irelia" style="max-width:30%; margin:5px;">
