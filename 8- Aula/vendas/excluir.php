@@ -9,7 +9,7 @@
 	if(isset($_GET["excluir"])){
 
 		$idvenda = htmlentities($_GET["excluir"]);
-		require("../conecta.php"); // Presumindo que 'conecta.php' está um nível acima da pasta atual
+		require("/conecta.php"); 
 		$mysqli->query("delete from vendas where idvenda = '$idvenda'");
 		echo $mysqli->error;
 		if ($mysqli->error==""){

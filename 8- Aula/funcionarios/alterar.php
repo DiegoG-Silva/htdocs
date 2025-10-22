@@ -40,7 +40,7 @@
 
 <?php 
 	if(isset($_POST["botao"])){
-		require("../conecta.php"); // Presumindo que 'conecta.php' está um nível acima da pasta atual
+		require("conecta.php");
 		$idfunc = htmlentities($_POST["idfunc"]);
 		$nome   = htmlentities($_POST["nome"]);
 		$cargo  = htmlentities($_POST["cargo"]);

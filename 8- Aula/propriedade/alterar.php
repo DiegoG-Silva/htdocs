@@ -44,7 +44,7 @@
 
 <?php 
 	if(isset($_POST["botao"])){
-		require("../conecta.php"); // Presumindo que 'conecta.php' está um nível acima da pasta atual
+		require("conecta.php");
 		$idprop = htmlentities($_POST["idprop"]);
 		$propriedade   = htmlentities($_POST["propriedade"]);
 		$proprietario = htmlentities($_POST["proprietario"]);

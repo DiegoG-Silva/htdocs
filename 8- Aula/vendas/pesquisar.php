@@ -12,7 +12,7 @@
 	<?php 
 	if(isset($_POST["botao"])){
 
-		require("../conecta.php"); // Presumindo que 'conecta.php' está um nível acima da pasta atual
+		require("/conecta.php"); 
 		$produto=htmlentities($_POST["produto"]);
 
 			// pesquisando dados

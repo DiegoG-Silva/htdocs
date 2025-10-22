@@ -9,7 +9,7 @@
 	if(isset($_GET["excluir"])){
 
 		$idprop = htmlentities($_GET["excluir"]);
-		require("../conecta.php"); // Presumindo que 'conecta.php' está um nível acima da pasta atual
+		require("conecta.php");
 		$mysqli->query("delete from propriedade where idprop = '$idprop'");
 		echo $mysqli->error;
 		if ($mysqli->error==""){

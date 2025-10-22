@@ -21,8 +21,8 @@
 		
 		<?php 
 			// conexao com o banco de dados
-			require("../conecta.php"); // Presumindo que 'conecta.php' está um nível acima da pasta atual
-		
+			require("/conecta.php"); 
+					
 			// executar comandos sql
 			// consulta registros da tabela
 			$query = $mysqli->query("select * from vendas");

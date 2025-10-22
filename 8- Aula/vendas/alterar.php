@@ -48,7 +48,7 @@
 
 <?php 
 	if(isset($_POST["botao"])){
-		require("../conecta.php"); // Presumindo que 'conecta.php' está um nível acima da pasta atual
+		require("conecta.php");
 		$idvenda = htmlentities($_POST["idvenda"]);
 		$data_venda   = htmlentities($_POST["data_venda"]);
 		$idcli = htmlentities($_POST["idcli"]);
