@@ -1,0 +1,177 @@
+/* === Reset básico === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* === Cores e tipografia (Mais acolhedor) === */
+:root {
+    --bg-color: #fcf9f5; /* Creme claro, tipo farinha */
+    --text-color: #4b2d0e; /* Marrom escuro */
+    --primary-color: #f7a072; /* Salmão/Pêssego, cor de pão assado */
+    --secondary-color: #7b5e48; /* Marrom médio */
+    --accent-color: #5c885c; /* Verde suave para o estoque */
+    --border-color: #e0d8cc; /* Borda suave */
+    --radius: 12px;
+    --transition: 0.3s ease;
+    --font-stack: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+  
+body {
+    font-family: var(--font-stack);
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 2rem; /* Aumenta o padding geral */
+}
+
+/* === Cabeçalho e Títulos === */
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+  
+p {
+    margin-bottom: 1em;
+    color: var(--secondary-color);
+}
+  
+/* Emojis grandes */
+p[style*="font-size: 100px"] {
+    margin-bottom: 40px;
+}
+
+/* === Links e Botões === */
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--transition);
+}
+  
+a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+  
+button, input[type="submit"] {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.8em 1.5em; /* Aumenta o padding */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background var(--transition), transform var(--transition);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 5px 0; /* Espaçamento entre botões */
+}
+  
+button:hover {
+    background: #e67e5a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* === Formulários e Inputs === */
+input[type="number"], input[type="text"], input[type="email"] {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 8px;
+    margin-right: 5px;
+    width: 100px; /* Tamanho padrão para inputs de quantidade */
+}
+
+/* INPUT ESPECÍFICO PARA QUANTIDADE */
+input[name="quantidade"] {
+    width: 60px !important; /* Ajuste para o input de quantidade na tabela */
+    text-align: center;
+}
+
+/* === Tabelas (Produto e Carrinho) === */
+table {
+    width: 100%;
+    border-collapse: separate; /* Permite o border-radius */
+    border-spacing: 0;
+    margin-bottom: 2rem;
+    background: white;
+    border-radius: var(--radius);
+    overflow: hidden; /* Garante que o border-radius funcione */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+  
+th, td {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+  
+th {
+    background: var(--secondary-color); /* Fundo da coluna para contraste */
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Estilo para a última linha sem borda */
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Estilo para linhas pares (zebra striping) */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Destaque para o campo Estoque */
+td:nth-child(4) { 
+    font-weight: 700;
+    color: var(--accent-color); 
+}
+
+/* Destaque para o Total a pagar */
+table:last-of-type tr:last-child td {
+    background-color: #fff3e0; /* Cor de destaque suave para o total */
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* Estilo para o Alerta de Estoque */
+div[style*="border: 1px solid red"] {
+    border: 2px solid #e74c3c !important; 
+    background-color: #fde8e8 !important;
+    color: #c0392b;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* === Seção Loja/Gerenciamento === */
+.loja {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    margin-bottom: 30px;
+}
+
+.finalizar {
+    text-align: center;
+}
